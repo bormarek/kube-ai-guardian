@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guardian-api
+  namespace: kube-ai-guardian
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: guardian-api
+
+  template:
+    metadata:
+      labels:
+        app: guardian-api
+
+    spec:
+      containers:
+        - name: guardian-api
+          image: kube-ai-guardian:0.1
+
+          ports:
+            - containerPort: 8000
+
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8000
+            initialDelaySeconds: 2
+            periodSeconds: 5
+
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "250m"
+              memory: "128Mi"
