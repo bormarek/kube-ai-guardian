@@ -1,0 +1,99 @@
+LAST SEEN   TYPE      REASON              OBJECT                               MESSAGE
+6m22s       Normal    Scheduled           pod/guardian-api-58d9c4d97d-fsnsb    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-fsnsb to k3d-guardian-server-0
+24m         Normal    Scheduled           pod/guardian-api-58d9c4d97d-2h4b5    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-2h4b5 to k3d-guardian-server-0
+176m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-v5jnb    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-v5jnb to k3d-guardian-server-0
+3h5m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-vm5zq    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-vm5zq to k3d-guardian-server-0
+3h5m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-6wrrs    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-6wrrs to k3d-guardian-server-0
+3h8m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-x6pm8    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-x6pm8 to k3d-guardian-server-0
+6m22s       Normal    Scheduled           pod/guardian-api-58d9c4d97d-g22sc    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-g22sc to k3d-guardian-server-0
+3h8m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-tprsr    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-tprsr to k3d-guardian-server-0
+24m         Normal    Scheduled           pod/guardian-api-58d9c4d97d-dtxtm    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-dtxtm to k3d-guardian-server-0
+176m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-9w2l9    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-9w2l9 to k3d-guardian-server-0
+174m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-hnmgs    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-hnmgs to k3d-guardian-server-0
+8m45s       Normal    Scheduled           pod/guardian-api-58d9c4d97d-lvvx6    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-lvvx6 to k3d-guardian-server-0
+175m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-xclfv    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-xclfv to k3d-guardian-server-0
+3h8m        Normal    Scheduled           pod/guardian-api-58d9c4d97d-vbm4z    Successfully assigned kube-ai-guardian/guardian-api-58d9c4d97d-vbm4z to k3d-guardian-server-0
+3h8m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-vbm4z
+3h8m        Normal    Killing             pod/guardian-api-58d9c4d97d-bwj89    Stopping container guardian-api
+3h8m        Normal    Pulled              pod/guardian-api-58d9c4d97d-vbm4z    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+3h8m        Normal    Created             pod/guardian-api-58d9c4d97d-vbm4z    Container created
+3h8m        Normal    Started             pod/guardian-api-58d9c4d97d-vbm4z    Container started
+3h8m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-tprsr
+3h8m        Normal    Killing             pod/guardian-api-58d9c4d97d-xd8p8    Stopping container guardian-api
+3h8m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-x6pm8
+3h8m        Normal    Killing             pod/guardian-api-58d9c4d97d-vbm4z    Stopping container guardian-api
+3h8m        Normal    Started             pod/guardian-api-58d9c4d97d-x6pm8    Container started
+3h8m        Normal    Created             pod/guardian-api-58d9c4d97d-x6pm8    Container created
+3h8m        Normal    Pulled              pod/guardian-api-58d9c4d97d-tprsr    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+3h8m        Normal    Pulled              pod/guardian-api-58d9c4d97d-x6pm8    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+3h8m        Normal    Created             pod/guardian-api-58d9c4d97d-tprsr    Container created
+3h8m        Normal    Started             pod/guardian-api-58d9c4d97d-tprsr    Container started
+3h6m        Normal    Killing             pod/guardian-api-58d9c4d97d-x6pm8    Stopping container guardian-api
+3h6m        Normal    Killing             pod/guardian-api-58d9c4d97d-tprsr    Stopping container guardian-api
+3h6m        Warning   Unhealthy           pod/guardian-api-58d9c4d97d-x6pm8    Readiness probe failed: Get "http://10.42.0.18:8000/ready": dial tcp 10.42.0.18:8000: connect: connection refused
+3h6m        Warning   Unhealthy           pod/guardian-api-58d9c4d97d-tprsr    Readiness probe failed: Get "http://10.42.0.17:8000/ready": dial tcp 10.42.0.17:8000: connect: connection refused
+3h5m        Normal    ScalingReplicaSet   deployment/guardian-api              Scaled up replica set guardian-api-58d9c4d97d from 0 to 2
+3h5m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-6wrrs
+3h5m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-vm5zq
+3h5m        Normal    Created             pod/guardian-api-58d9c4d97d-vm5zq    Container created
+3h5m        Normal    Pulled              pod/guardian-api-58d9c4d97d-vm5zq    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+3h5m        Normal    Started             pod/guardian-api-58d9c4d97d-vm5zq    Container started
+3h5m        Normal    Started             pod/guardian-api-58d9c4d97d-6wrrs    Container started
+3h5m        Normal    Created             pod/guardian-api-58d9c4d97d-6wrrs    Container created
+3h5m        Normal    Pulled              pod/guardian-api-58d9c4d97d-6wrrs    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+177m        Normal    Killing             pod/guardian-api-58d9c4d97d-6wrrs    Stopping container guardian-api
+177m        Normal    Killing             pod/guardian-api-58d9c4d97d-vm5zq    Stopping container guardian-api
+177m        Normal    ScalingReplicaSet   deployment/guardian-api              Scaled up replica set guardian-api-58d9c4d97d from 0 to 2
+176m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-v5jnb
+176m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-9w2l9
+176m        Normal    Started             pod/guardian-api-58d9c4d97d-v5jnb    Container started
+176m        Normal    Pulled              pod/guardian-api-58d9c4d97d-v5jnb    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+176m        Normal    Created             pod/guardian-api-58d9c4d97d-v5jnb    Container created
+176m        Normal    Started             pod/guardian-api-58d9c4d97d-9w2l9    Container started
+176m        Normal    Created             pod/guardian-api-58d9c4d97d-9w2l9    Container created
+176m        Normal    Pulled              pod/guardian-api-58d9c4d97d-9w2l9    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+175m        Normal    Created             pod/guardian-api-58d9c4d97d-xclfv    Container created
+175m        Normal    Pulled              pod/guardian-api-58d9c4d97d-xclfv    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+175m        Normal    Started             pod/guardian-api-58d9c4d97d-xclfv    Container started
+175m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-xclfv
+175m        Normal    SuccessfulDelete    replicaset/guardian-api-58d9c4d97d   Deleted pod: guardian-api-58d9c4d97d-xclfv
+175m        Normal    ScalingReplicaSet   deployment/guardian-api              Scaled down replica set guardian-api-58d9c4d97d from 3 to 2
+175m        Normal    Killing             pod/guardian-api-58d9c4d97d-xclfv    Stopping container guardian-api
+174m        Normal    ScalingReplicaSet   deployment/guardian-api              Scaled up replica set guardian-api-58d9c4d97d from 2 to 3
+174m        Normal    Pulled              pod/guardian-api-58d9c4d97d-hnmgs    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+174m        Normal    Created             pod/guardian-api-58d9c4d97d-hnmgs    Container created
+174m        Normal    Started             pod/guardian-api-58d9c4d97d-hnmgs    Container started
+174m        Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-hnmgs
+24m         Normal    Killing             pod/guardian-api-58d9c4d97d-hnmgs    Stopping container guardian-api
+24m         Normal    Killing             pod/guardian-api-58d9c4d97d-9w2l9    Stopping container guardian-api
+24m         Normal    Killing             pod/guardian-api-58d9c4d97d-v5jnb    Stopping container guardian-api
+24m         Warning   Unhealthy           pod/guardian-api-58d9c4d97d-9w2l9    Readiness probe failed: Get "http://10.42.0.21:8000/ready": dial tcp 10.42.0.21:8000: connect: connection refused
+24m         Warning   Unhealthy           pod/guardian-api-58d9c4d97d-v5jnb    Readiness probe failed: Get "http://10.42.0.22:8000/ready": dial tcp 10.42.0.22:8000: connect: connection refused
+24m         Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-2h4b5
+24m         Normal    Created             pod/guardian-api-58d9c4d97d-2h4b5    Container created
+24m         Normal    Created             pod/guardian-api-58d9c4d97d-dtxtm    Container created
+24m         Normal    Pulled              pod/guardian-api-58d9c4d97d-dtxtm    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+24m         Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-dtxtm
+24m         Normal    ScalingReplicaSet   deployment/guardian-api              Scaled up replica set guardian-api-58d9c4d97d from 0 to 2
+24m         Normal    Started             pod/guardian-api-58d9c4d97d-2h4b5    Container started
+24m         Normal    Started             pod/guardian-api-58d9c4d97d-dtxtm    Container started
+24m         Normal    Pulled              pod/guardian-api-58d9c4d97d-2h4b5    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+8m46s       Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-lvvx6
+8m46s       Normal    ScalingReplicaSet   deployment/guardian-api              Scaled up replica set guardian-api-58d9c4d97d from 2 to 3
+8m45s       Normal    Started             pod/guardian-api-58d9c4d97d-lvvx6    Container started
+8m45s       Normal    Created             pod/guardian-api-58d9c4d97d-lvvx6    Container created
+8m45s       Normal    Pulled              pod/guardian-api-58d9c4d97d-lvvx6    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+6m23s       Normal    Started             pod/guardian-api-58d9c4d97d-fsnsb    Container started
+6m23s       Normal    Pulled              pod/guardian-api-58d9c4d97d-g22sc    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+6m23s       Normal    SuccessfulDelete    replicaset/guardian-api-58d9c4d97d   Deleted pod: guardian-api-58d9c4d97d-dtxtm
+6m23s       Normal    SuccessfulDelete    replicaset/guardian-api-58d9c4d97d   Deleted pod: guardian-api-58d9c4d97d-lvvx6
+6m23s       Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-g22sc
+6m23s       Normal    SuccessfulCreate    replicaset/guardian-api-58d9c4d97d   Created pod: guardian-api-58d9c4d97d-fsnsb
+6m23s       Normal    Created             pod/guardian-api-58d9c4d97d-g22sc    Container created
+6m23s       Normal    Started             pod/guardian-api-58d9c4d97d-g22sc    Container started
+6m23s       Normal    Created             pod/guardian-api-58d9c4d97d-fsnsb    Container created
+6m23s       Normal    Killing             pod/guardian-api-58d9c4d97d-lvvx6    Stopping container guardian-api
+6m23s       Normal    Pulled              pod/guardian-api-58d9c4d97d-fsnsb    Container image "kube-ai-guardian:0.1" already present on machine and can be accessed by the pod
+6m23s       Normal    Killing             pod/guardian-api-58d9c4d97d-dtxtm    Stopping container guardian-api
+6m23s       Normal    ScalingReplicaSet   deployment/guardian-api              Scaled down replica set guardian-api-58d9c4d97d from 3 to 1
+6m23s       Normal    ScalingReplicaSet   deployment/guardian-api              Scaled up replica set guardian-api-58d9c4d97d from 1 to 3

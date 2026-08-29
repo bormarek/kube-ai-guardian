@@ -1,0 +1,4 @@
+NAME                            READY   STATUS    RESTARTS   AGE     IP           NODE                    NOMINATED NODE   READINESS GATES
+guardian-api-58d9c4d97d-2h4b5   1/1     Running   0          24m     10.42.0.33   k3d-guardian-server-0   <none>           <none>
+guardian-api-58d9c4d97d-fsnsb   1/1     Running   0          6m20s   10.42.0.36   k3d-guardian-server-0   <none>           <none>
+guardian-api-58d9c4d97d-g22sc   1/1     Running   0          6m20s   10.42.0.35   k3d-guardian-server-0   <none>           <none>

@@ -1,0 +1,45 @@
+Name:                   guardian-api
+Namespace:              kube-ai-guardian
+CreationTimestamp:      Sat, 29 Aug 2026 15:09:34 +0200
+Labels:                 <none>
+Annotations:            argocd.argoproj.io/tracking-id: guardian-api:apps/Deployment:kube-ai-guardian/guardian-api
+                        deployment.kubernetes.io/revision: 1
+Selector:               app=guardian-api
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=guardian-api
+  Containers:
+   guardian-api:
+    Image:      kube-ai-guardian:0.1
+    Port:       8000/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     250m
+      memory:  128Mi
+    Requests:
+      cpu:         50m
+      memory:      64Mi
+    Liveness:      http-get http://:8000/health delay=5s timeout=1s period=10s #success=1 #failure=3
+    Readiness:     http-get http://:8000/ready delay=2s timeout=1s period=5s #success=1 #failure=3
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  <none>
+  Tolerations:     <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   guardian-api-58d9c4d97d (3/3 replicas created)
+Events:
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  24m    deployment-controller  Scaled up replica set guardian-api-58d9c4d97d from 0 to 2
+  Normal  ScalingReplicaSet  8m50s  deployment-controller  Scaled up replica set guardian-api-58d9c4d97d from 2 to 3
+  Normal  ScalingReplicaSet  6m27s  deployment-controller  Scaled down replica set guardian-api-58d9c4d97d from 3 to 1
+  Normal  ScalingReplicaSet  6m27s  deployment-controller  Scaled up replica set guardian-api-58d9c4d97d from 1 to 3
