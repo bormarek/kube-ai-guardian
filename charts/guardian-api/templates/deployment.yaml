@@ -28,7 +28,7 @@ spec:
 
           readinessProbe:
             httpGet:
-              path: /ready
+              path: /broken-ready
               port: {{ .Values.service.targetPort }}
             initialDelaySeconds: 2
             periodSeconds: 5
