@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: kube-ai-guardian
-  tag: "0.2"
+  tag: "0.3"
   pullPolicy: IfNotPresent
 
 service:
