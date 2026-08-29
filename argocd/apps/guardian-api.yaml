@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: guardian-api
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/bormarek/kube-ai-guardian.git
+    targetRevision: main
+    path: charts/guardian-api
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kube-ai-guardian
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
