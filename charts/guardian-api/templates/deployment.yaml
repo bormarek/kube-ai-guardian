@@ -28,6 +28,7 @@ spec:
             runAsUser: 10001
             runAsGroup: 10001
             allowPrivilegeEscalation: false
+            privileged: true
             capabilities:
               drop:
                 - ALL
